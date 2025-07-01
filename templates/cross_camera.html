@@ -1,0 +1,37 @@
+<!-- cross_camera.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cross-Camera Mode</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="/" class="brand">PLAYER RE-ID</a>
+    </div>
+    <div class="navbar-right">
+      <a href="/">Home Page</a>
+      <a href="/cross_camera">Cross-Camera</a>
+      <a href="/single_camera">Single-Camera</a>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <h1>🎥 Cross-Camera Re-Identification</h1>
+    <form action="/upload_cross" method="POST" enctype="multipart/form-data">
+      <label>Upload Broadcast Video:</label><br>
+      <input type="file" name="broadcast" accept="video/mp4" required><br><br>
+
+      <label>Upload TactiCam Video:</label><br>
+      <input type="file" name="tacticam" accept="video/mp4" required><br><br>
+
+      <label>Upload Overview Video:</label><br>
+      <input type="file" name="overview" accept="video/mp4" required><br><br>
+
+      <input type="submit" value="Start Cross-Camera Processing">
+    </form>
+  </div>
+</body>
+</html>
