@@ -1,0 +1,30 @@
+<!-- single-camera.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Single-Camera Mode</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="/" class="brand">PLAYER RE-ID</a>
+    </div>
+    <div class="navbar-right">
+      <a href="/">Home Page</a>
+      <a href="/cross_camera">Cross-Camera</a>
+      <a href="/single_camera">Single-Camera</a>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <h1>🎥 Single-Camera Re-Identification</h1>
+    <form action="/upload_single" method="POST" enctype="multipart/form-data">
+      <label>Upload Video:</label><br><br>
+      <input type="file" name="singlevideo" accept="video/mp4" required><br><br>
+      <input type="submit" value="Start Single-Camera Processing">
+    </form>
+  </div>
+</body>
+</html>
