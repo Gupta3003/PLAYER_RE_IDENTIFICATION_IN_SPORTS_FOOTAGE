@@ -70,7 +70,7 @@ a904f686-e79e-4aae-8725-f06d6ffc3d8c
 
 ## 🗂️ Folder Structure
 
-/Player Re-Identification Project
+Player Re-Identification Project/
 ├── app.py                     # 🎯 Main Flask backend app
 ├── requirements.txt           # 📦 Python dependencies
 ├── README.md                  # 📘 Project documentation
