@@ -1,4 +1,3 @@
-<!-- result_single.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +9,14 @@
   <div class="main-content">
     <h1>🎥 Single-Camera Re-Identification Results</h1>
 
-    <h2>📌 Annotated Output Video</h2>
+    <h2>📥 Uploaded Input Video</h2>
     <video width="640" height="360" controls>
-      <!-- ✅ Use video_path from Flask -->
-      <source src="{{ url_for('static', filename=video_path) }}" type="video/mp4">
-      Your browser does not support the video tag.
+      <source src="{{ url_for('static', filename=input_video) }}" type="video/mp4">
+    </video>
+
+    <h2>📤 Annotated Output Video</h2>
+    <video width="640" height="360" controls>
+      <source src="{{ url_for('static', filename=output_video) }}" type="video/mp4">
     </video>
 
     <br><br>
