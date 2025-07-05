@@ -71,46 +71,46 @@ a904f686-e79e-4aae-8725-f06d6ffc3d8c
 ## 🗂️ Folder Structure
 
 Player Re-Identification Project/
-├── app.py                     # 🎯 Main Flask backend app
-├── requirements.txt           # 📦 Python dependencies
-├── README.md                  # 📘 Project documentation
+├── app.py # 🎯 Main Flask backend app
+├── requirements.txt # 📦 Python dependencies
+├── README.md # 📘 Project documentation
 
-├── docs/                      # 📄 Project documentation & video
-│   ├── Project Report         # Final Report (PDF)
-│   └── Project Video          # Demo Video (MP4)
+├── docs/ # 📄 Project documentation & video
+│ ├── Project Report # Final Report (PDF)
+│ └── Project Video # Demo Video (MP4)
 
 ├── data/
-│   └── uploads/               # 📤 Uploaded input videos
-│       ├── 15sec_input_720p.mp4
-│       ├── broadcast.mp4
-│       └── tacticam.mp4
+│ └── uploads/ # 📤 Uploaded input videos
+│ ├── 15sec_input_720p.mp4
+│ ├── broadcast.mp4
+│ └── tacticam.mp4
 
-├── models/                    # 🤖 YOLOv11 model files
-│   └── best.pt
+├── models/ # 🤖 YOLOv11 model files
+│ └── best.pt
 
 ├── static/
-│   ├── outputs/
-│   │   ├── reid_single/       # 🎯 Output videos for Single Camera mode
-│   │   │   └── annotated_overview.mp4
-│   │   └── reid_cross/        # 🔁 Combined output for Cross Camera mode
-│   │       └── combined_video.mp4
-│   ├── styles.css             # 🎨 Web styling
-│   └── scripts.js             # ⚙️ (Optional) JS scripts for frontend
+│ ├── outputs/
+│ │ ├── reid_single/ # 🎯 Output videos for Single Camera mode
+│ │ │ └── annotated_overview.mp4
+│ │ └── reid_cross/ # 🔁 Combined output for Cross Camera mode
+│ │ └── combined_video.mp4
+│ ├── styles.css # 🎨 Web styling
+│ └── scripts.js # ⚙️ Optional JS scripts for frontend
 
-├── templates/                 # 🧾 HTML templates for Flask
-│   ├── index.html             # Home page
-│   ├── single_camera.html     # Upload page for single camera mode
-│   ├── cross_camera.html      # Upload page for cross camera mode
-│   ├── result_single.html     # Output view - single camera
-│   └── result_cross.html      # Output view - cross camera
+├── templates/ # 🧾 HTML templates for Flask
+│ ├── index.html # Home page
+│ ├── single_camera.html # Upload page for single camera mode
+│ ├── cross_camera.html # Upload page for cross camera mode
+│ ├── result_single.html # Output view - single camera
+│ └── result_cross.html # Output view - cross camera
 
-├── src/                       # 🧠 Core computer vision modules
-│   ├── detect.py              # YOLOv11-based player detection
-│   ├── extract_features.py    # Color histogram feature extractor
-│   ├── match_cross_camera.py  # Cross-view identity matching logic
-│   ├── track_single_camera.py # Player tracking with SORT
-│   ├── combine_three_and_draw.py # Combine feeds and draw matched lines
-│   └── utils.py               # Helper functions (drawing, I/O, etc.)
+├── src/ # 🧠 Core computer vision modules
+│ ├── detect.py # YOLOv11-based player detection
+│ ├── extract_features.py # Color histogram feature extractor
+│ ├── match_cross_camera.py # Cross-view identity matching logic
+│ ├── track_single_camera.py # Player tracking with SORT
+│ ├── combine_three_and_draw.py # Combine feeds and draw matched lines
+│ └── utils.py # Helper functions (drawing, I/O, etc.)
 
 
 ---
