@@ -30,6 +30,20 @@ https://github.com/user-attachments/assets/a904f686-e79e-4aae-8725-f06d6ffc3d8c
 
 ---
 
+## ✍️ Report
+[Project Report.pdf](https://github.com/user-attachments/files/21075191/Project.Report.pdf)
+
+---
+
+## Demo Outputs Vedios
+### 🎥 Cross Camera Outputs Vedio
+> **Final combined video with identity lines drawn to represent matched players across views.**
+
+### 🎥 Single Camera Outputs Vedio
+> **Resulting video showing tracked players with persistent IDs within the same camera.**
+https://github.com/user-attachments/assets/9ab84c95-a036-439e-96af-ec2c68878645
+---
+
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page  
@@ -49,7 +63,7 @@ https://github.com/user-attachments/assets/a904f686-e79e-4aae-8725-f06d6ffc3d8c
 ![Input Single](https://github.com/user-attachments/assets/98d81273-16f7-4409-8933-00602df08b5e)
 
 ### 🧵 Output Video (Single Camera)  
-> **Resulting video showing tracked players with persistent IDs within the same camera.**
+> **Resulting video image showing tracked players with persistent IDs within the same camera.**
 ![Output Single](https://github.com/user-attachments/assets/dc41c758-3b4e-4fee-9f17-b9405b136634)
 
 ### 🎥 Input Videos (Cross Camera)  
@@ -64,7 +78,7 @@ https://github.com/user-attachments/assets/a904f686-e79e-4aae-8725-f06d6ffc3d8c
 ![Main](https://github.com/user-attachments/assets/0755a81b-2c66-4fc2-a63d-791afb6bf472)
 
 ### 🎯 Output Video (Cross Camera Combined)  
-> **Final combined video with identity lines drawn to represent matched players across views.**
+> **Final combined video image with identity lines drawn to represent matched players across views.**
 ![Cross Output](https://github.com/user-attachments/assets/6ed8085e-85c2-4d9d-913d-18adfadbce52)
 
 ---
