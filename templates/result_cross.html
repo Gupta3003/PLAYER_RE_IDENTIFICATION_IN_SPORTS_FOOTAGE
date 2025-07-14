@@ -1,3 +1,4 @@
+<!-- templates/result_cross.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,6 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
   <style>
-    /* Loader style */
     #loader {
       position: fixed;
       width: 100%;
@@ -51,24 +51,21 @@
   <div id="main-content" class="main-content">
     <h1>📊 Cross-Camera Re-Identification Results</h1>
 
-    <h2>📥 Input Video</h2>
+    <h2>📥 Input Videos</h2>
+
     <p>🎥 Broadcast Camera</p>
     <video width="640" height="360" controls>
       <source src="{{ url_for('static', filename=input_videos['broadcast']) }}" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
 
     <p>🎥 TactiCam Camera</p>
     <video width="640" height="360" controls>
       <source src="{{ url_for('static', filename=input_videos['tacticam']) }}" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
 
-    <p>🎥 15sec_input_720p</p>
-    <video width="640" height="360" controls>
-      <source src="{{ url_for('static', filename=input_videos['overview']) }}" type="video/mp4">
-    </video>
-
-    <h2>📤 Output Video</h2>
-    <p>🎞️ Combined Cross-Camera Output</p>
+    <h2>📤 Combined Annotated Output</h2>
     <video width="640" height="360" controls>
       <source src="{{ url_for('static', filename=combined_video) }}" type="video/mp4">
       Your browser does not support the video tag.
@@ -78,13 +75,12 @@
     <a href="/" class="back-btn">⬅ Back to Home</a>
   </div>
 
-  <!-- JS: simulate 12-second delay -->
   <script>
     window.onload = function() {
       setTimeout(function() {
         document.getElementById('loader').style.display = 'none';
         document.getElementById('main-content').style.display = 'block';
-      }, 12000); // 12 seconds = 12000 ms
+      }, 12000); // Delay for simulated processing
     };
   </script>
 </body>

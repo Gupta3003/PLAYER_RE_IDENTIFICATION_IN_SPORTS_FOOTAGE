@@ -3,12 +3,12 @@ import os
 from werkzeug.utils import secure_filename
 from src.track_single_camera import track_players_single
 from src.match_cross_camera import match_players_cross
-from src.combine_three_and_draw import combine_three_and_draw_lines
+from src.combine_two_and_draw import combine_two_and_draw_lines  # Updated to 2-video version
 
 app = Flask(__name__)
 
 # Folder paths
-UPLOAD_FOLDER = 'static/uploads'
+UPLOAD_FOLDER = 'data/uploads'
 SINGLE_OUTPUT_FOLDER = 'static/outputs/reid_single'
 CROSS_OUTPUT_FOLDER = 'static/outputs/reid_cross'
 
@@ -40,58 +40,50 @@ def upload_single():
     input_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     file.save(input_path)
 
-    # Create output path
-    output_filename = f"annotated_{filename}"
-    output_path = os.path.join(app.config['SINGLE_OUTPUT_FOLDER'], output_filename)
+    # Run single-camera tracking
+    track_players_single(input_path)
 
-    # Run processing
-    track_players_single(input_path, output_path)
-
-    input_video = f"uploads/{filename}"
-    output_video = f"outputs/reid_single/{output_filename}"  # Relative to 'static/'
+    input_video = f"data/uploads/{filename}"
+    output_video = f"outputs/reid_single/annotated_single.mp4"
 
     return render_template('result_single.html',
                            input_video=input_video,
                            output_video=output_video)
 
+
 @app.route('/upload_cross', methods=['POST'])
 def upload_cross():
+    # Get uploaded files
     broadcast = request.files['broadcast']
     tacticam = request.files['tacticam']
-    overview = request.files['overview']
 
     # Secure filenames
     broadcast_filename = secure_filename(broadcast.filename)
     tacticam_filename = secure_filename(tacticam.filename)
-    overview_filename = secure_filename(overview.filename)
 
-    # Save uploaded videos
+    # Save videos to uploads folder
     path1 = os.path.join(app.config['UPLOAD_FOLDER'], broadcast_filename)
     path2 = os.path.join(app.config['UPLOAD_FOLDER'], tacticam_filename)
-    path3 = os.path.join(app.config['UPLOAD_FOLDER'], overview_filename)
 
     broadcast.save(path1)
     tacticam.save(path2)
-    overview.save(path3)
 
-    # Step 1: Re-identification and save annotated videos to reid_cross
-    output_paths = match_players_cross(path1, path2, path3, output_dir=app.config['CROSS_OUTPUT_FOLDER'])
+    # Step 1: Re-identification and save annotated outputs
+    output_paths = match_players_cross(path1, path2)  # expects 2 inputs
 
-    # Step 2: Combine three views and draw lines
-    combined_video_path = combine_three_and_draw_lines(
-        output_paths["broadcast"],
-        output_paths["tacticam"],
-        output_paths["overview"],
-        output_dir=app.config['CROSS_OUTPUT_FOLDER']
+    # Step 2: Combine annotated videos with line visualization
+    combined_video_path = combine_two_and_draw_lines(
+        output_paths["view1"],
+        output_paths["view2"],
+        output_path=os.path.join(app.config['CROSS_OUTPUT_FOLDER'], "combined_two_lines.mp4")
     )
 
+    # Prepare video paths for rendering
     input_videos = {
-        'broadcast': f"uploads/{broadcast_filename}",
-        'tacticam': f"uploads/{tacticam_filename}",
-        'overview': f"uploads/{overview_filename}"
+        'broadcast': f"data/uploads/{broadcast_filename}",
+        'tacticam': f"data/uploads/{tacticam_filename}"
     }
-
-    combined_video = os.path.relpath(combined_video_path, 'static')  # returns path like "outputs/reid_cross/combined.mp4"
+    combined_video = os.path.relpath(combined_video_path, 'static')  # e.g., outputs/reid_cross/combined_two_lines.mp4
 
     return render_template('result_cross.html',
                            input_videos=input_videos,
@@ -99,3 +91,4 @@ def upload_cross():
 
 if __name__ == '__main__':
     app.run(debug=True)
+ 
