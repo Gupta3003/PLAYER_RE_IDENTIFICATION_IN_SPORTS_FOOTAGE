@@ -1,4 +1,4 @@
-
+  
 # 🏃‍♂️ Player Re-Identification in Sports Footage (Web App)
 
 ## 📌 Project Overview
@@ -56,7 +56,7 @@ https://github.com/user-attachments/assets/261dc411-1ac5-4d78-837e-3bdbe446bd45
 
 ### 📥 Upload Page (Cross Camera)  
 > **Three video inputs (Broadcast, Tacticam, Overview) accepted to perform identity matching across multiple angles.**
-![Cross Upload](https://github.com/user-attachments/assets/8c30d1a3-234f-40a1-927f-2e856dd35e66)
+<img width="1366" height="768" alt="Screenshot (1015)" src="https://github.com/user-attachments/assets/f47778d2-614d-4fd7-bdb5-57181ea7b553" />
 
 ### 🎞️ Input Video (Single Camera)  
 > **Original video from a single feed (e.g., Broadcast camera) to be processed for player tracking.**
