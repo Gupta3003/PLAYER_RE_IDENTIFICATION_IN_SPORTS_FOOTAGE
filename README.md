@@ -1,4 +1,4 @@
-
+  
 # 🏃‍♂️ Player Re-Identification in Sports Footage (Web App)
 
 ## 📌 Project Overview
@@ -31,7 +31,7 @@ https://github.com/user-attachments/assets/a904f686-e79e-4aae-8725-f06d6ffc3d8c
 ---
 
 ## ✍️ Report
-[Project.Report.pdf](https://github.com/user-attachments/files/21231598/Project.Report.pdf)
+[Project Report.pdf](https://github.com/user-attachments/files/21231607/Project.Report.pdf)
 
 ---
 
