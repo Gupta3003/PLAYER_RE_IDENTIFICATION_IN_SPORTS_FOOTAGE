@@ -1,5 +1,5 @@
-# Ignore virtual environments
+# Ignore Python virtual environment
 venv
-
-# Ignore Models files best.pt
+# Ignore trained model weights and checkpoints
 models
+

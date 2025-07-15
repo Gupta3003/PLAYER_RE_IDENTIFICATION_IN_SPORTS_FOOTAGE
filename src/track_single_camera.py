@@ -8,7 +8,7 @@ import numpy as np
 
 def track_players_single(video_path):
     cap = cv2.VideoCapture(video_path)
-    output_path = 'static/outputs/reid_single/annotated_single.avi'  # use XVID format
+    output_path = 'static/outputs/reid_single/annotated_single.mp4'  # use XVID format
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     writer = None
     player_features = {}
@@ -59,7 +59,7 @@ def track_players_single(video_path):
             id_positions[best_match] = center
 
         if writer is None:
-            fourcc = cv2.VideoWriter_fourcc(*'XVID')
+            fourcc = cv2.VideoWriter_fourcc(*'avc1')  # current line (likely using H264)
             writer = cv2.VideoWriter(output_path, fourcc, 30, (frame.shape[1], frame.shape[0]))
 
         writer.write(frame)

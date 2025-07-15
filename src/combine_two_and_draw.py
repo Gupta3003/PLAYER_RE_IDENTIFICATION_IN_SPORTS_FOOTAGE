@@ -4,7 +4,7 @@ from src.extract_features import extract_color_histogram
 from sklearn.metrics.pairwise import cosine_similarity
 from src.utils import draw_box
 
-def combine_two_and_draw_lines(video1, video2, output_path='static/outputs/reid_cross/combined_two_lines.avi'):
+def combine_two_and_draw_lines(video1, video2, output_path='static/outputs/reid_cross/combined_two_lines.mp4'):
     cap1 = cv2.VideoCapture(video1)
     cap2 = cv2.VideoCapture(video2)
 
@@ -14,7 +14,7 @@ def combine_two_and_draw_lines(video1, video2, output_path='static/outputs/reid_
     width = w1 + w2
     height = max(h1, h2)
 
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')  # or use 'MJPG'
+    fourcc = cv2.VideoWriter_fourcc(*'avc1')  # current line (likely using H264)
     writer = cv2.VideoWriter(output_path, fourcc, 30, (width, height))
 
     player_features = {}

@@ -1,4 +1,4 @@
-  
+
 # 🏃‍♂️ Player Re-Identification in Sports Footage (Web App)
 
 ## 📌 Project Overview
@@ -6,7 +6,7 @@
 This web application enables **automated player re-identification** in sports videos using computer vision. It supports:
 
 - **Single-Camera Re-ID**: Track players in a single video feed.
-- **Cross-Camera Re-ID**: Match players across three video views (Broadcast, Tacticam) and generate a combined visual.
+- **Cross-Camera Re-ID**: Match players across three video views (Broadcast, Tacticam, Overview) and generate a combined visual.
 
 > Built using **Flask**, **YOLOv11**, **OpenCV**, and **feature-based matching**.
 
@@ -26,22 +26,22 @@ This web application enables **automated player re-identification** in sports vi
 ## 🌐 Demo
 
 🎥 **Demo Video**:  
-https://github.com/user-attachments/assets/42c83cb9-e960-4cc2-bed9-eefe5f5756ce
+https://github.com/user-attachments/assets/a904f686-e79e-4aae-8725-f06d6ffc3d8c
 
 ---
 
 ## ✍️ Report
-[Project Report.pdf](https://github.com/user-attachments/files/21228349/Project.Report.pdf)
+[Project.Report.pdf](https://github.com/user-attachments/files/21175253/Project.Report.pdf)
 
 ---
 
 ## Demo Outputs Vedios
 ### 🎥 Cross Camera Outputs Vedio
-https://github.com/user-attachments/assets/f8434468-c9d1-4958-8fa7-7500a34dec41
+https://github.com/user-attachments/assets/3fc051f3-bcc9-4750-b1c5-c05da6890e15
 ---
 
 ### 🎥 Single Camera Outputs Vedio
-https://github.com/user-attachments/assets/261dc411-1ac5-4d78-837e-3bdbe446bd45
+https://github.com/user-attachments/assets/9ab84c95-a036-439e-96af-ec2c68878645
 ---
 
 ## 🖼️ Screenshots
@@ -56,7 +56,7 @@ https://github.com/user-attachments/assets/261dc411-1ac5-4d78-837e-3bdbe446bd45
 
 ### 📥 Upload Page (Cross Camera)  
 > **Three video inputs (Broadcast, Tacticam, Overview) accepted to perform identity matching across multiple angles.**
-<img width="1366" height="768" alt="Screenshot (1015)" src="https://github.com/user-attachments/assets/f47778d2-614d-4fd7-bdb5-57181ea7b553" />
+![Cross Upload](https://github.com/user-attachments/assets/8c30d1a3-234f-40a1-927f-2e856dd35e66)
 
 ### 🎞️ Input Video (Single Camera)  
 > **Original video from a single feed (e.g., Broadcast camera) to be processed for player tracking.**
@@ -64,19 +64,22 @@ https://github.com/user-attachments/assets/261dc411-1ac5-4d78-837e-3bdbe446bd45
 
 ### 🧵 Output Video (Single Camera)  
 > **Resulting video image showing tracked players with persistent IDs within the same camera.**
-<img width="1366" height="618" alt="Screenshot (1020)" src="https://github.com/user-attachments/assets/e1221340-3ab4-4424-9a5c-dc3e237b901a" />
+![Output Single](https://github.com/user-attachments/assets/dc41c758-3b4e-4fee-9f17-b9405b136634)
 
 ### 🎥 Input Videos (Cross Camera)  
-> *Two videos used for multi-camera player re-identification:*
-> - **Broadcast Camera View**
-<img width="1366" height="748" alt="Screenshot (1016)" src="https://github.com/user-attachments/assets/c0ba5337-cc1a-48bb-aa7d-834329ebf5fe" />
+> *Three videos used for multi-camera player re-identification:*
+> - **Broadcast Camera View**  
+![Broadcast](https://github.com/user-attachments/assets/5b4e6b62-4267-4939-b713-9de75a88395a)
 
 > - **Tacticam Camera View**  
-<img width="1366" height="544" alt="Screenshot (1017)" src="https://github.com/user-attachments/assets/2ad720f0-4025-4d61-ac4f-c2f846c4e165" />
+![Tacticam](https://github.com/user-attachments/assets/f6a1aba4-33bc-44c0-8b19-db9327bf9e31)
+
+> - **Main Camera View**  
+![Main](https://github.com/user-attachments/assets/0755a81b-2c66-4fc2-a63d-791afb6bf472)
 
 ### 🎯 Output Video (Cross Camera Combined)  
 > **Final combined video image with identity lines drawn to represent matched players across views.**
-<img width="1366" height="605" alt="Screenshot (1018)" src="https://github.com/user-attachments/assets/8623afef-e612-4f7e-bee2-8d06e98b1a72" />
+![Cross Output](https://github.com/user-attachments/assets/6ed8085e-85c2-4d9d-913d-18adfadbce52)
 
 ---
 
@@ -167,7 +170,7 @@ Then open your browser at: [http://localhost:5000](http://localhost:5000)
 
 ➤ **Cross Camera Mode**  
 - Go to Cross Camera Re-ID  
-- Upload 2 views (Broadcast, Tacticam)  
+- Upload 3 views (Broadcast, Tacticam, Overview)  
 - See combined output with identity lines drawn
 
 ---

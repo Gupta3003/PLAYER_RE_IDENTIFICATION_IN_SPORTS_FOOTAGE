@@ -9,7 +9,7 @@ player_centers = {}
 
 def annotate_and_save(video_path, player_features, id_counter, name_suffix):
     cap = cv2.VideoCapture(video_path)
-    output_path = f'static/outputs/reid_cross/annotated_{name_suffix}.avi'
+    output_path = f'static/outputs/reid_cross/annotated_{name_suffix}.mp4'
     writer = None
 
     while True:
@@ -47,7 +47,7 @@ def annotate_and_save(video_path, player_features, id_counter, name_suffix):
                 cv2.line(frame, pts[0], pts[1], (255, 0, 0), 2)
 
         if writer is None:
-            fourcc = cv2.VideoWriter_fourcc(*'XVID')  # or use 'MJPG'
+            fourcc = cv2.VideoWriter_fourcc(*'avc1')  # current line (likely using H264)
             writer = cv2.VideoWriter(output_path, fourcc, 30, (frame.shape[1], frame.shape[0]))
         writer.write(frame)
 
