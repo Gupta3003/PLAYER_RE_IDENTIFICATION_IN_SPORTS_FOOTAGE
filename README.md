@@ -35,7 +35,7 @@ https://github.com/user-attachments/assets/a904f686-e79e-4aae-8725-f06d6ffc3d8c
 
 ---
 
-## Demo Outputs Vedios
+## Outputs Vedios
 ### 🎥 Cross Camera Outputs Vedio
 https://github.com/user-attachments/assets/fe8a11d6-5a2a-4c86-854d-d800dba1b5f6
 ---
