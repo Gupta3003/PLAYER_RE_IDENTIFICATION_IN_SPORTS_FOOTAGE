@@ -40,7 +40,7 @@ https://github.com/user-attachments/assets/fe8a11d6-5a2a-4c86-854d-d800dba1b5f6
 ---
 
 ### 🎥 Single Camera Outputs Vedio
-https://github.com/user-attachments/assets/e4414599-2e5b-4c2f-a495-df505185b120
+https://github.com/user-attachments/assets/ca8e3442-1f10-4061-9bd4-3959517a9efa
 ---
 
 ## 🖼️ Screenshots
