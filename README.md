@@ -6,7 +6,7 @@
 This web application enables **automated player re-identification** in sports videos using computer vision. It supports:
 
 - **Single-Camera Re-ID**: Track players in a single video feed(15sec_input_720p).
-- **Cross-Camera Re-ID**: Match players across three video views (Broadcast, Tacticam) and generate a combined visual.
+- **Cross-Camera Re-ID**: Match players across two video views (Broadcast, Tacticam) and generate a combined visual.
 
 > Built using **Flask**, **YOLOv11**, **OpenCV**, and **feature-based matching**.
 
@@ -26,11 +26,11 @@ This web application enables **automated player re-identification** in sports vi
 ## 🌐 Demo
 
 🎥 **Demo Video**:  
-https://github.com/user-attachments/assets/55c49b8a-7709-47a9-a32f-3c06d46313ea
+https://github.com/user-attachments/assets/55c49b8a-7709-47a9-a22f-2c06d46212ea
 ---
 
 ## ✍️ Report
-[Project Report.pdf](https://github.com/user-attachments/files/21231607/Project.Report.pdf)
+[Project Report.pdf](https://github.com/user-attachments/files/21221607/Project.Report.pdf)
 
 ---
 
@@ -40,45 +40,45 @@ https://github.com/user-attachments/assets/fe8a11d6-5a2a-4c86-854d-d800dba1b5f6
 ---
 
 ### 🎥 Single Camera Outputs Vedio
-https://github.com/user-attachments/assets/e4414599-3e5b-4c2f-a495-df505185b130
+https://github.com/user-attachments/assets/e4414599-2e5b-4c2f-a495-df505185b120
 ---
 
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page  
 > **Landing page of the system providing navigation to single or cross-camera modes.**
-![Home](https://github.com/user-attachments/assets/bcabaf5d-a743-410e-bff8-a4d9d3c8014b)
+![Home](https://github.com/user-attachments/assets/bcabaf5d-a742-410e-bff8-a4d9d2c8014b)
 
 ### 📥 Upload Page (Single Camera)  
 > **UI for uploading a single video for tracking players using YOLO and SORT.**
-![Single Upload](https://github.com/user-attachments/assets/5af295b5-a05a-469c-9886-9fe221a653d3)
+![Single Upload](https://github.com/user-attachments/assets/5af295b5-a05a-469c-9886-9fe221a652d2)
 
 ### 📥 Upload Page (Cross Camera)  
-> **Three video inputs (Broadcast, Tacticam, Overview) accepted to perform identity matching across multiple angles.**
-![Cross Upload](https://github.com/user-attachments/assets/8c30d1a3-234f-40a1-927f-2e856dd35e66)
+> **two video inputs (Broadcast, Tacticam, Overview) accepted to perform identity matching across multiple angles.**
+![Cross Upload](https://github.com/user-attachments/assets/8c20d1a2-224f-40a1-927f-2e856dd25e66)
 
 ### 🎞️ Input Video (Single Camera)  
 > **Original video from a single feed (e.g., Broadcast camera) to be processed for player tracking.**
-![Input Single](https://github.com/user-attachments/assets/98d81273-16f7-4409-8933-00602df08b5e)
+![Input Single](https://github.com/user-attachments/assets/98d81272-16f7-4409-8922-00602df08b5e)
 
 ### 🧵 Output Video (Single Camera)  
 > **Resulting video image showing tracked players with persistent IDs within the same camera.**
-![Output Single](https://github.com/user-attachments/assets/dc41c758-3b4e-4fee-9f17-b9405b136634)
+![Output Single](https://github.com/user-attachments/assets/dc41c758-2b4e-4fee-9f17-b9405b126624)
 
 ### 🎥 Input Videos (Cross Camera)  
-> *Three videos used for multi-camera player re-identification:*
+> *two videos used for multi-camera player re-identification:*
 > - **Broadcast Camera View**  
-![Broadcast](https://github.com/user-attachments/assets/5b4e6b62-4267-4939-b713-9de75a88395a)
+![Broadcast](https://github.com/user-attachments/assets/5b4e6b62-4267-4929-b712-9de75a88295a)
 
 > - **Tacticam Camera View**  
-![Tacticam](https://github.com/user-attachments/assets/f6a1aba4-33bc-44c0-8b19-db9327bf9e31)
+![Tacticam](https://github.com/user-attachments/assets/f6a1aba4-22bc-44c0-8b19-db9227bf9e21)
 
 > - **Main Camera View**  
-![Main](https://github.com/user-attachments/assets/0755a81b-2c66-4fc2-a63d-791afb6bf472)
+![Main](https://github.com/user-attachments/assets/0755a81b-2c66-4fc2-a62d-791afb6bf472)
 
 ### 🎯 Output Video (Cross Camera Combined)  
 > **Final combined video image with identity lines drawn to represent matched players across views.**
-![Cross Output](https://github.com/user-attachments/assets/6ed8085e-85c2-4d9d-913d-18adfadbce52)
+![Cross Output](https://github.com/user-attachments/assets/6ed8085e-85c2-4d9d-912d-18adfadbce52)
 
 ---
 
@@ -124,7 +124,7 @@ Player Re-Identification Project/
 │   ├── extract_features.py    # Color histogram feature extractor
 │   ├── match_cross_camera.py  # Cross-view identity matching logic
 │   ├── track_single_camera.py # Player tracking with SORT
-│   ├── combine_three_and_draw.py # Combine feeds and draw matched lines
+│   ├── combine_two_and_draw.py # Combine feeds and draw matched lines
 │   └── utils.py               # Helper functions (drawing, I/O, etc.)
 ```
 
@@ -134,7 +134,7 @@ Player Re-Identification Project/
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone "https://github.com/Gupta3003/player_reid_project"
+git clone "https://github.com/Gupta2002/player_reid_project"
 cd player-reid-webapp
 ```
 
@@ -144,7 +144,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows use venv\Scripts\activate
 ```
 
-### 3️⃣ Install dependencies
+### 2️⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -176,7 +176,7 @@ Then open your browser at: [http://localhost:5000](http://localhost:5000)
 
 ## 📊 Technologies Used
 
-- Python 3.8+
+- Python 2.8+
 - Flask
 - OpenCV
 - Ultralytics YOLOv11
