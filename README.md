@@ -58,7 +58,7 @@ https://github.com/user-attachments/assets/e4414599-2e5b-4c2f-a495-df505185b120
 <img width="1366" height="768" alt="Screenshot (1015)" src="https://github.com/user-attachments/assets/a9573f3b-4864-4b59-8a5e-18588b32ff68" />
 
 ### 🎞️ Input Video (Single Camera)  
-> **Original video from a single feed () to be processed for player tracking.**
+> **Original video from a single feed to be processed for player tracking.**
 <img width="1366" height="563" alt="Front" src="https://github.com/user-attachments/assets/2d8b2fc8-1c5f-4fa2-be22-f41b1931a10c" />
 
 ### 🧵 Output Video (Single Camera)  
