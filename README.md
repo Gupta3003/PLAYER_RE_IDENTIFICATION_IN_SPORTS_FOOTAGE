@@ -26,7 +26,7 @@ This web application enables **automated player re-identification** in sports vi
 ## 🌐 Demo
 
 🎥 **Demo Video**:  
-https://github.com/user-attachments/assets/55c49b8a-7709-47a9-a22f-2c06d46212ea
+https://github.com/user-attachments/assets/9e5505e2-7812-4839-9369-2dccf66b8ed2
 ---
 
 ## ✍️ Report
