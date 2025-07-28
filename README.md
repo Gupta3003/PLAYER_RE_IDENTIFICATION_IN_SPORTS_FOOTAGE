@@ -9,7 +9,6 @@ This web application enables **automated player re-identification** in sports vi
 - **Cross-Camera Re-ID**: Match players across two video views (Broadcast, Tacticam) and generate a combined visual.
 
 > Built using **Flask**, **YOLOv11**, **OpenCV**, and **feature-based matching**.
-
 ---
 
 ## 🚀 Features
@@ -40,7 +39,7 @@ https://github.com/user-attachments/assets/fe8a11d6-5a2a-4c86-854d-d800dba1b5f6
 ---
 
 ### 🎥 Single Camera Outputs Vedio
-https://github.com/user-attachments/assets/ca8e3442-1f10-4061-9bd4-3959517a9efa
+https://github.com/user-attachments/assets/32b04d5d-15be-4ee8-8a69-1b0dee79332c
 ---
 
 ## 🖼️ Screenshots
