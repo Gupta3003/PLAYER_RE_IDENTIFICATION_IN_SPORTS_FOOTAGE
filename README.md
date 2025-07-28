@@ -47,39 +47,35 @@ https://github.com/user-attachments/assets/e4414599-2e5b-4c2f-a495-df505185b120
 
 ### 🏠 Home Page  
 > **Landing page of the system providing navigation to single or cross-camera modes.**
-![Home](https://github.com/user-attachments/assets/bcabaf5d-a742-410e-bff8-a4d9d2c8014b)
+<img width="1366" height="768" alt="Screenshot (999)" src="https://github.com/user-attachments/assets/6b17f404-5d64-42a8-8ccf-0bb5ce210da1" />
 
 ### 📥 Upload Page (Single Camera)  
-> **UI for uploading a single video for tracking players using YOLO and SORT.**
-![Single Upload](https://github.com/user-attachments/assets/5af295b5-a05a-469c-9886-9fe221a652d2)
+> **UI for uploading a single video(15sec_input_720p) for tracking players using YOLO and SORT.**
+<img width="1366" height="768" alt="Screenshot (1008)" src="https://github.com/user-attachments/assets/04f39e8f-aed0-4f5d-9a36-262f833b2a74" />
 
 ### 📥 Upload Page (Cross Camera)  
-> **two video inputs (Broadcast, Tacticam, Overview) accepted to perform identity matching across multiple angles.**
-![Cross Upload](https://github.com/user-attachments/assets/8c20d1a2-224f-40a1-927f-2e856dd25e66)
+> **Two video inputs (Broadcast, Tacticam) accepted to perform identity matching across multiple angles.**
+<img width="1366" height="768" alt="Screenshot (1015)" src="https://github.com/user-attachments/assets/a9573f3b-4864-4b59-8a5e-18588b32ff68" />
 
 ### 🎞️ Input Video (Single Camera)  
-> **Original video from a single feed (e.g., Broadcast camera) to be processed for player tracking.**
-![Input Single](https://github.com/user-attachments/assets/98d81272-16f7-4409-8922-00602df08b5e)
+> **Original video from a single feed () to be processed for player tracking.**
+<img width="1366" height="563" alt="Front" src="https://github.com/user-attachments/assets/2d8b2fc8-1c5f-4fa2-be22-f41b1931a10c" />
 
 ### 🧵 Output Video (Single Camera)  
 > **Resulting video image showing tracked players with persistent IDs within the same camera.**
-![Output Single](https://github.com/user-attachments/assets/dc41c758-2b4e-4fee-9f17-b9405b126624)
+<img width="1366" height="618" alt="Screenshot (1020)" src="https://github.com/user-attachments/assets/c1a5d516-9ac9-4cee-8a33-579d2b30d0e4" />
 
 ### 🎥 Input Videos (Cross Camera)  
 > *two videos used for multi-camera player re-identification:*
 > - **Broadcast Camera View**  
-![Broadcast](https://github.com/user-attachments/assets/5b4e6b62-4267-4929-b712-9de75a88295a)
+<img width="1366" height="748" alt="Screenshot (1016)" src="https://github.com/user-attachments/assets/6a50d448-334f-470f-8a00-0b7ebeeb942f" />
 
 > - **Tacticam Camera View**  
-![Tacticam](https://github.com/user-attachments/assets/f6a1aba4-22bc-44c0-8b19-db9227bf9e21)
-
-> - **Main Camera View**  
-![Main](https://github.com/user-attachments/assets/0755a81b-2c66-4fc2-a62d-791afb6bf472)
+<img width="1366" height="544" alt="Screenshot (1017)" src="https://github.com/user-attachments/assets/0df2a6cb-b950-4834-aafa-da836c20f27c" />
 
 ### 🎯 Output Video (Cross Camera Combined)  
 > **Final combined video image with identity lines drawn to represent matched players across views.**
-![Cross Output](https://github.com/user-attachments/assets/6ed8085e-85c2-4d9d-912d-18adfadbce52)
-
+<img width="1366" height="605" alt="Screenshot (1018)" src="https://github.com/user-attachments/assets/5771672f-8f72-4eec-9271-9a3463fe08e7" />
 ---
 
 ## 🗂️ Folder Structure
