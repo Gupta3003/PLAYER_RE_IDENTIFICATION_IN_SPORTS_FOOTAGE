@@ -5,8 +5,8 @@
 
 This web application enables **automated player re-identification** in sports videos using computer vision. It supports:
 
-- **Single-Camera Re-ID**: Track players in a single video feed.
-- **Cross-Camera Re-ID**: Match players across three video views (Broadcast, Tacticam, Overview) and generate a combined visual.
+- **Single-Camera Re-ID**: Track players in a single video feed(15sec_input_720p).
+- **Cross-Camera Re-ID**: Match players across three video views (Broadcast, Tacticam) and generate a combined visual.
 
 > Built using **Flask**, **YOLOv11**, **OpenCV**, and **feature-based matching**.
 
@@ -164,12 +164,12 @@ Then open your browser at: [http://localhost:5000](http://localhost:5000)
 
 ➤ **Single Camera Mode**  
 - Go to Single Camera Re-ID  
-- Upload one video file  
+- Upload one video file(15sec_input_720p)
 - View tracked player IDs in output video
 
 ➤ **Cross Camera Mode**  
 - Go to Cross Camera Re-ID  
-- Upload 3 views (Broadcast, Tacticam, Overview)  
+- Upload 2 vedio file(Broadcast, Tacticam)  
 - See combined output with identity lines drawn
 
 ---
